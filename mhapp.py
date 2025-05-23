@@ -37,7 +37,6 @@ if st.button("Submit"):
         emotion, confidence = predict_emotion(user_input)
         st.markdown(f"**Detected Emotion:** {emotion} ({confidence:.2%} confidence)")
         responses = {
-            responses = {
                 "admiration": "It's wonderful that you recognize and appreciate greatness!",
                 "amusement": "Haha, that sounds fun! What made you laugh?",
                 "anger": "It’s okay to feel angry. Do you want to share what triggered it?",
@@ -69,8 +68,6 @@ if st.button("Submit"):
                 "tiredness": "It’s okay to rest. Do you want to share what’s draining you?",
                 # fallback
                 "default": "Thanks for sharing. I'm here to listen."
-            }
-
         }
         response = responses.get(emotion, "Thanks for sharing. I'm here to listen.")
         st.success(f"**Therapist:** {response}")
