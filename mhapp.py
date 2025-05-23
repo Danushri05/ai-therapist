@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 
 st.set_page_config(page_title="AI Therapist", layout="centered")
-model_name = "bhadresh-savani/distilbert-base-uncased-emotion"
+model_name = "SamLowe/roberta-base-go_emotions"
 
 
 @st.cache_resource(show_spinner=True)
